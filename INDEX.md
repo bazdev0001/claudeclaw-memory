@@ -21,4 +21,14 @@ Last updated: 2026-05-28 21:53 UTC
 
 ---
 
-**Rule:** Check INDEX.md at session start. Update critical files at session end. If I forget something twice, pin it here immediately.
+## Self-Improvement System (2026-05-29)
+- [[LEARNINGS]] — Running log of lessons from all sessions (all agents append here)
+- [[FRICTION-LOG]] — Mistakes that must not repeat (all agents append here)
+
+## Maintenance Schedule
+- Hourly remote routine: trig_01QLEaq2RxeGogZevmoKPhqE — checks agent outputs, updates LEARNINGS.md in repo
+- Hourly local cron: auto-commits Obsidian vault changes
+
+---
+
+**Rule:** Check INDEX.md at session start. Read LEARNINGS.md + FRICTION-LOG.md. Update at session end. If I forget something twice, it goes in FRICTION-LOG immediately.

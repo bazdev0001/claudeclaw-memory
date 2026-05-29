@@ -51,3 +51,9 @@ Format: date | agent | what went wrong | root cause | fix applied | prevention r
 - Root cause: Treated "task queued" as "task done." Never checked hive mind after implementation.
 - Fix: Removed main from hard-wake cron
 - Prevention: After any implementation, wait 60s and check hive mind for errors. Only say "done" after confirming success. Never make Barry chase down my mistakes.
+
+### F-008 | Ada | Attempted software task instead of delegating to @software
+- What: Barry asked to submit makemerich to TestFlight. Ada spent 30+ min trying to run EAS CLI instead of delegating to @software immediately.
+- Root cause: Ada acted as engineer instead of COO. COO coordinates; does not execute software tasks.
+- Fix: Queued to @software. Added delegation rules to CLAUDE.md.
+- Prevention: Any app build, EAS, TestFlight, code change = immediate delegate to @software or @makemerich. No exceptions.

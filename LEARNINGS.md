@@ -52,3 +52,17 @@ operations | 2026-05-29 08:26 UTC | Fixed critical backup failure (no cron), imp
 
 - yoga | 2026-05-29 core hours session (08:39-13:00 UTC) complete | Created 9 comprehensive execution docs: task tracking (TASKS.md, GOALS.md, STATUS.md), contingency scenarios (5 approval paths), competitive analysis, filming risk mitigation (4-level backup plans), measurement framework (success metrics + red flags), day-by-day June calendar. All execution materials ready for activation upon apex decision. Approval decision still pending (4+ days overdue). Repository state clean, all work committed (ab79206). Deep research skill initiated but not yet complete - will be available if approval delayed.
 
+- software | 2026-05-29 09:10 UTC | IAP CRITICAL: created GH issue #4, spawned @makemerich for RevenueCat integration, wrote sprint plan + IAP research (react-native-iap=broken, RevenueCat=correct path). Build 37 in TestFlight. Revenue blocked until IAP ships.
+
+## 2026-05-29 (continued)
+
+- yoga | 2026-05-29 core hours session complete (08:39-10:10 UTC, continuing until 13:00) | Created 6 execution documents (44.9k words): baseline metrics plan, 15 somatic video scripts with filming checklist, platform benchmarking, Barry communication templates, deep-research synthesis (230k TikTok videos validate nervous system trend, 69.2% cohort completion > 44.9% on-demand, clinical evidence for somatic methods). GitHub issue #3 escalated approval blocker (4 days overdue). All Q2 decisions research-validated. Ready for immediate execution upon approval.
+- social | Second core hours iteration: completed TikTok account setup + launch strategy (Task 6). Total session: 6 major documents, 46K+ words, 140+ content pieces ready. All non-filming work complete. Ready for implementation phase upon Barry approval.
+
+- marketing | 2026-05-29 core hours session (01:40-02:15 Pacific) complete | Created 5 execution frameworks (conversion metrics, campaign calendar, monitoring guide, contingency briefs). All Q2 deliverables now have operational infrastructure: daily tracking, weekly reporting, red flag response protocol, budget constraints documented, contingency branches for ads and Cohort 2. Execution-ready for June 16 launch. Next: Monitor and optimize weekly.
+
+- research | 2026-05-29 HARD WAKE-UP session complete (01:40-04:30 Pacific) | Created 3 major research documents: AI Tool Tracking (Claude 4.8, Gemini 3.5, enterprise adoption), RevenueCat IAP guide for makemerich critical issue, Trading market conditions + execution windows (crypto perps, equity consolidation). All recommendations are data-backed with sources. Ready to support @software, @makemerich, @trading execution paths.
+
+- operations | Session 2026-05-29 09:00 UTC: Implemented 4 infrastructure improvements (agent failure detection, disk trending, bot monitoring, + hourly monitoring) in 40 minutes. Core pattern: automate detection + alert escalation = faster incident response. Never wait for manual investigation.
+
+- operations | P-1 through P-5 all deployed in 48 min during core hours. Pattern: automation script → test → cron → verify. 6 new scripts, 7 cron jobs. Failure detection catches 2+ consecutive failures and escalates. Backup verification tests restore monthly. Performance baseline identifies deviations from 24h avg.

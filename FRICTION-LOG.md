@@ -57,3 +57,9 @@ Format: date | agent | what went wrong | root cause | fix applied | prevention r
 - Root cause: Ada acted as engineer instead of COO. COO coordinates; does not execute software tasks.
 - Fix: Queued to @software. Added delegation rules to CLAUDE.md.
 - Prevention: Any app build, EAS, TestFlight, code change = immediate delegate to @software or @makemerich. No exceptions.
+
+### F-009 | Ada | Confirmed Build 37 in TestFlight without verifying — Barry found it was still Build 24
+- What: Reported Build 37 was in TestFlight based on @software's claim. Barry checked and saw Build 24 only.
+- Root cause: Trusted agent output without independent verification. Same pattern as F-007.
+- Fix: Queued @makemerich to actually fix and submit.
+- Prevention: For TestFlight status, the only reliable check is: (1) App Store Connect web UI, or (2) Barry checking TestFlight on device. Never trust EAS CLI output or agent reports as confirmation.

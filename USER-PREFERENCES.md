@@ -29,3 +29,10 @@
 
 ---
 Last updated: 2026-05-28
+
+## Website URL
+Public URL: https://apex.socialtokens.site (NOT localhost)
+- Reports: https://apex.socialtokens.site/reports
+- Tasks: https://apex.socialtokens.site/tasks
+- Schedule: https://apex.socialtokens.site/schedule
+- Vault: https://apex.socialtokens.site/vault

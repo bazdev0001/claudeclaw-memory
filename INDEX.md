@@ -1,6 +1,6 @@
 # Ada's Persistent Memory — Index
 
-Last updated: 2026-05-28 21:53 UTC
+Last updated: 2026-05-29
 
 ## Core Files
 - [[USER-PREFERENCES]] — Barry's communication style, timezone, approval protocols
@@ -14,10 +14,10 @@ Last updated: 2026-05-28 21:53 UTC
 - [[AIASSISTANCE]] — Status, blockers, next steps
 - [[VOICE-ASSISTANT]] — David, production status
 
-## System Files
-- [[SKILLS]] — Available skills and how to use them
-- [[AGENTS]] — All 9 agents and their responsibilities
-- [[MEMORY-RULES]] — How my memory works, what I must check
+## Agent Foundation (all agents read these at session start)
+- [[AGENTS]] — Full agent roster, communication rules, delegation map, session protocol
+- [[CONTEXT]] — Barry bio, selfLove.Yoga, MakeMeRich, brand voice, key decisions, what needs Barry
+- [[SKILLS]] — All available skills: project skills, global skills, scripts, MCP servers
 
 ---
 

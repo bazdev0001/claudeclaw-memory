@@ -36,3 +36,8 @@ Public URL: https://apex.socialtokens.site (NOT localhost)
 - Tasks: https://apex.socialtokens.site/tasks
 - Schedule: https://apex.socialtokens.site/schedule
 - Vault: https://apex.socialtokens.site/vault
+
+## Communication Rule (CRITICAL)
+Telegram responses: 1-2 sentences MAX unless Barry asks for details.
+Details/summaries go to the website: https://apex.socialtokens.site
+If something needs more explanation, say "Details at apex.socialtokens.site/reports"

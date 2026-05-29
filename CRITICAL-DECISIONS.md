@@ -25,3 +25,9 @@
 
 ---
 Last updated: 2026-05-28 21:53 UTC
+
+## Software Factory: apexapp template (2026-05-29/30)
+- After makemerich releases, create "apexapp" as the official Apex default template
+- All future apps will be spawned from apexapp (React Native + Firebase + RevenueCat + EAS + Claude API)
+- Goal: one command deploys a new fully-configured app
+- Status: PENDING — research doc complete at agents/software/output/software-factory-concept.md

@@ -1,35 +1,35 @@
-# Current Blockers
+# Current Blockers — 2026-05-29 00:15 UTC
 
-## Critical
-1. **MakeMeRich Build 37 TestFlight Submission Failed**
-   - Cause: Unknown (Apple rejected during processing)
-   - Blocker: Cannot submit untested code due to Expo Go issues
-   - Barry input needed: Retry Build 37 or revert to Build 24?
+## CRITICAL
+1. **MakeMeRich EAS Build Broken — Cannot Rebuild Build 24**
+   - Error: `Failed to resolve plugin for module` (react-native-iap, expo-font)
+   - Cause: app.json has plugin configs but EAS build system can't resolve them
+   - Impact: Cannot submit updated builds to TestFlight
+   - Current state: Build 24 is in TestFlight, stable
+   - Attempted fixes:
+     * Reverted to Build 24 commit (6f49c1b)
+     * Cleaned node_modules multiple times
+     * Cleared npm cache
+     * Tried building with --legacy-peer-deps
+   - All attempts fail with same plugin resolution error
+   - Need to either: fix plugin config OR use existing Build 24 in TestFlight
 
-2. **MakeMeRich Navigation Bug**
-   - MainTabNavigator not registered in App.tsx
-   - Must be fixed before App Store submission
-   - @software identified this as biggest technical debt
+2. **Build 37 Failed TestFlight Submission (Twice)**
+   - Reason: Code changes after Build 25 broke the app
+   - Reverted to Build 24 to fix
+   - But can't rebuild Build 24 due to above blocker
 
-## High
+## HIGH
 3. **Expo Go Port Conflict**
-   - Cannot run local testing due to port 8081 conflict + non-interactive mode
-   - Blocks verification of SDK 55 changes
-   - Task #3 created but not yet started
+   - Cannot run local testing
+   - Task #3 pending (fix port 8081 + interactive mode)
 
 4. **Discord Communication Stalled**
-   - Discord sender initialized but zero agent messages since setup
-   - Agents spawning/failing (e.g., makemerich task-5ac spawn_failed)
-   - Impact: Cannot see agent activity in Discord
+   - Initialized but zero agent messages
 
-## Medium
+## MEDIUM  
 5. **26 Uncommitted Changes Across Projects**
-   - Git state dirty, reproducibility broken
-   - Recommend: Commit or revert everything to establish clean baseline
-
-6. **Agent Documentation Incomplete**
-   - Directories created but all 13 docs per agent are empty templates
-   - Phase 3-6 of architecture refactor pending
+   - Git state dirty
 
 ---
-Last updated: 2026-05-28 21:53 UTC
+Last updated: 2026-05-29 00:15 UTC

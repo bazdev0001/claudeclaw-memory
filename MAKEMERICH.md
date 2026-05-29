@@ -1,39 +1,45 @@
 # MakeMeRich Project Status
 
-## Current Status
-- **Latest Build:** 37 (FAILED TestFlight submission)
-- **Stable in TestFlight:** Build 24
-- **Version:** 0.0.3
-- **Biggest Technical Debt:** MainTabNavigator never registered in App.tsx (identified by @software)
+## Current Activity (2026-05-28 22:27)
+- **Action:** Rebuilding Build 24 (known-good state) from scratch
+- **Reason:** Build 37 failed TestFlight twice. Root cause: Code changes after Build 25 broke the build
+- **Status:** npm install in progress, then EAS build will start
+
+## Build Analysis
+Build 24 was working. Between Build 24-37, these changes broke it:
+- react-native-iap v15.3.1 upgrade
+- react-native-iap plugin removal
+- React downgrade to 18.2.0
+- React Native downgrade to 0.72.0
+- Expo SDK upgrade to 55
+
+Solution: Revert to Build 24 commit (6f49c1b) and rebuild clean.
 
 ## Build History
 | Build | Date | Status | Notes |
 |-------|------|--------|-------|
-| 24 | - | TestFlight | Stable, working |
-| 37 | 2026-05-28 | Failed | SDK 55 + React fixes, failed TestFlight submission |
-| 22 | 2026-05-22 | TestFlight | Last successful submission |
+| 24 | - | TestFlight | Known-good, working |
+| 25 | - | Prepared | Test plan created, never submitted |
+| 37 | 2026-05-28 | Failed | Bad code, failed twice |
+| NEW | 2026-05-28 | In Progress | Rebuilding Build 24 state |
 
 ## Known Issues
 1. **Navigation Bug:** MainTabNavigator not registered in App.tsx
    - Impact: CRITICAL — breaks revenue loop
-   - Status: Identified, not yet fixed
-   - 25 uncommitted changes related to this
+   - Status: Identified in Build 24, not fixed
 
-2. **Expo Go:** Port 8081 conflict, non-interactive mode issue
+2. **Expo Go:** Port 8081 conflict, non-interactive mode
    - Decision: Skip local testing, test in TestFlight instead
-   - Task #3 created but pending
-
-3. **Build 37 Submission Failed**
-   - Likely cause: Code signing issue from SDK 55 changes
-   - Next step: Unclear (retry or revert to Build 24)
 
 ## TestFlight Access
 - URL: https://appstoreconnect.apple.com/apps/6762598615/testflight/ios
+- Current Build: 24
 
 ## Next Steps
-- TBD: Retry Build 37 or revert to Build 24?
-- FIX: MainTabNavigator registration in App.tsx
-- FIX: Commit all 25 uncommitted changes
+1. npm install completes
+2. EAS build starts
+3. Submit to TestFlight on success
+4. Then: Fix MainTabNavigator bug for next build
 
 ---
-Last updated: 2026-05-28 21:53 UTC
+Last updated: 2026-05-28 22:27 UTC

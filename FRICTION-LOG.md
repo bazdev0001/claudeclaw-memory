@@ -45,3 +45,9 @@ Format: date | agent | what went wrong | root cause | fix applied | prevention r
 ---
 
 **Rule:** All agents must add to this log when they make a mistake. This is a shared cross-agent log.
+
+### F-007 | Ada | Reported "done" without verifying implementation worked
+- What: Queued hard-wake tasks, said done. "spawn_refused: main is always_on" error was in hive mind. Barry had to find it.
+- Root cause: Treated "task queued" as "task done." Never checked hive mind after implementation.
+- Fix: Removed main from hard-wake cron
+- Prevention: After any implementation, wait 60s and check hive mind for errors. Only say "done" after confirming success. Never make Barry chase down my mistakes.

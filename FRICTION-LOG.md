@@ -73,3 +73,9 @@ Format: date | agent | what went wrong | root cause | fix applied | prevention r
   2. Ambiguous duration/scope = ask ONE question before acting
   3. Never set up recurring automation without explicit "this will keep running" warning
   4. Distinguish one-time vs recurring in every response
+
+### F-011 | Ada | Plain text responses bypass Telegram when MCP tool disconnects
+- What: Telegram MCP tool disconnects frequently. When Barry sends a message and the tool is reconnecting, Ada responds with plain text in the Claude Code session. Barry sees these as "thoughts in the app" not Telegram messages.
+- Root cause: Responded immediately instead of waiting for Telegram tool to reconnect.
+- Fix: Always use ToolSearch to wait for mcp__plugin_telegram_telegram__reply before responding.
+- Prevention: If Telegram tool is not available, call ToolSearch first. Never output plain text as a substitute for a Telegram reply.

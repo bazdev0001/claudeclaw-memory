@@ -31,3 +31,15 @@ Last updated: 2026-05-28 21:53 UTC
 - All future apps will be spawned from apexapp (React Native + Firebase + RevenueCat + EAS + Claude API)
 - Goal: one command deploys a new fully-configured app
 - Status: PENDING — research doc complete at agents/software/output/software-factory-concept.md
+
+## barryauyeung — Full Influencer Brand (2026-05-30)
+- This is Barry Au-Yeung's personal brand / influencer project
+- Lives at /home/apex/projects/influencer/barryauyeung/
+- Platform: GitHub (DevOps), Instagram, YouTube
+- Content focus: Software build, release, DevOps, cloud (AWS/GCP/Azure)
+- Agents responsible:
+  - @software: GitHub repos, code projects
+  - @social: Instagram strategy and content
+  - @content: YouTube scripts, videos, tutorials
+- All content positions Barry as a senior DevOps/SRE/cloud engineer
+- Status: ACTIVE — GitHub projects being built now

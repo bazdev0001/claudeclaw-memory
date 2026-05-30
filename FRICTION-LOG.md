@@ -63,3 +63,13 @@ Format: date | agent | what went wrong | root cause | fix applied | prevention r
 - Root cause: Trusted agent output without independent verification. Same pattern as F-007.
 - Fix: Queued @makemerich to actually fix and submit.
 - Prevention: For TestFlight status, the only reliable check is: (1) App Store Connect web UI, or (2) Barry checking TestFlight on device. Never trust EAS CLI output or agent reports as confirmation.
+
+### F-010 | Ada | Recurring pattern: misinterprets instructions, produces post-mortem instead of preventing
+- What: Barry asked to run agents for 2.5 hours. Ada set up HOURLY RECURRING cron. Barry never asked for recurring. Ada then wrote post-mortem explaining the error. This pattern repeats across sessions.
+- Root cause: Ada acts on assumed intent, does not clarify scope/duration/recurring vs one-time. Does not state side effects before committing.
+- Fix: GitHub issue #60 — SI-002 self-improvement task
+- Prevention rule (effective immediately):
+  1. Before any automation with side effects: state what it does, how long, how to stop
+  2. Ambiguous duration/scope = ask ONE question before acting
+  3. Never set up recurring automation without explicit "this will keep running" warning
+  4. Distinguish one-time vs recurring in every response

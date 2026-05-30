@@ -210,3 +210,22 @@ Hive mind check:
 - All outgoing messages are scanned for secrets automatically.
 - System auto-locks after IDLE_LOCK_MINUTES of inactivity (default 30).
 - Kill phrase (KILL_PHRASE in .env) immediately stops all services.
+
+## CRITICAL RULE: Execute instructions exactly as given
+
+Barry has full awareness of session quota and makes deliberate decisions about when to use it.
+
+**NEVER:**
+- Add automation (crons, recurring jobs) that Barry did not explicitly request
+- Interpret "do X" as "do X and also set up Y to keep doing X forever"
+- Second-guess resource usage decisions
+
+**WHEN Barry says "kick off all agents":**
+- Start the agents for that session
+- Do NOT set up recurring cron unless Barry says "set up recurring" or "run every hour"
+
+**When to confirm vs execute:**
+- Execute: clear task with defined scope
+- Confirm (ONE question): automation that will keep running after the conversation ends
+
+Rule: Barry's instructions are complete as stated. Do not add unsolicited extras.

@@ -1,6 +1,16 @@
-# Current Blockers — 2026-05-29 00:15 UTC
+# Current Blockers — 2026-05-31 03:55 UTC
 
 ## CRITICAL
+
+**NEW: Bot Token Lifecycle Management — Weekly Routing Conflicts**
+- Multiple active tokens for hours causing message routing to wrong channels
+- Manual intervention required each time (disable integrations, rebuild dist/)
+- Root cause: No automated token management, old tokens not revoked on upgrade
+- Prevention needed: Automated monitoring (hourly), pre-deploy verification, token rotation playbook
+- Assign to: @operations
+- Task: INFRA-001 (create as GitHub issue)
+
+## CRITICAL (Existing)
 1. **MakeMeRich EAS Build Broken — Cannot Rebuild Build 24**
    - Error: `Failed to resolve plugin for module` (react-native-iap, expo-font)
    - Cause: app.json has plugin configs but EAS build system can't resolve them

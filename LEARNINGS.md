@@ -48,6 +48,11 @@ operations | 2026-05-29 08:26 UTC | Fixed critical backup failure (no cron), imp
 - yoga | Approval request still pending after 4 days (deadline passed May 25) | Created contingency plans for all 5 approval scenarios (all, partial, none) so execution is instant upon decision. Task tracking infrastructure (TASKS.md, GOALS.md, STATUS.md) ready for Q2 execution.
 - yoga | Deep research task launched on Q2 2026 yoga field trends | Will complete research while approval pending; keeps core hours productive during blocker.
 
+## 2026-05-31
+
+- Ada | Bot token routing issue: multiple active tokens for HOURS before detection | Root cause: No automated monitoring, no alert system. Old tokens not revoked on upgrade. Created monitoring script but failed to make it continuous. Lesson: Reactive monitoring (manual scripts) catches issues AFTER impact. Need proactive continuous monitoring with immediate alerting. Task: INFRA-001 — implement hourly cron-based monitoring + alert on first token conflict.
+- Ada | Infrastructure issues require continuous automated detection, not manual intervention | Do not create one-off monitoring scripts. Always implement: (1) hourly cron job, (2) alert system (email/Slack/Telegram), (3) runbook for response, (4) prevention playbook.
+
 - social | 2026-05-29 HARD WAKE-UP (08:40-11:30 UTC): Completed all 5 core tasks (account verification, Instagram optimization, YouTube setup, content production 10K+ words, trends research). 17-day gap since last session filled with comprehensive deliverables. Ready for implementation phase. Blocker: Barry filming + biographical confirmation.
 
 - yoga | 2026-05-29 core hours session (08:39-13:00 UTC) complete | Created 9 comprehensive execution docs: task tracking (TASKS.md, GOALS.md, STATUS.md), contingency scenarios (5 approval paths), competitive analysis, filming risk mitigation (4-level backup plans), measurement framework (success metrics + red flags), day-by-day June calendar. All execution materials ready for activation upon apex decision. Approval decision still pending (4+ days overdue). Repository state clean, all work committed (ab79206). Deep research skill initiated but not yet complete - will be available if approval delayed.
